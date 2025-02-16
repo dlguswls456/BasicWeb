@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM simple example</title>
+    </head>
+    <body>
+        <h1 id="pageTitle" class="first">Hello World</h1>
+        <h1 id="pageTitle">Hello World</h1>
+
+        <script>
+            // Get the element with the id of pageTitle
+            // const pageTitle = document.getElementById("pageTitle");
+
+            // querySelector -> 첫번째만 가져옴
+            // const pageTitle = document.querySelector("h1");
+
+            // querySelectorAll -> 모두 가져옴
+            // const pageTitles = document.querySelectorAll("h1");
+
+            // getElementsByClassName
+            // const pageTitleClass = document.getElementsByClassName("first");
+            // console.log(pageTitleClass);
+
+            // getElementsByTagName
+            const pageTitleTag = document.getElementsByTagName("h1");
+            console.log(pageTitleTag);
+
+            // 조작하기
+            // pageTitles[0].textContent = "안녕 세상아";
+            // pageTitles[1].textContent = "안녕 세상아";
+
+            // pageTitleClass[0].textContent = "안녕 세상아";
+            pageTitleTag[0].textContent = "안녕 세상아";
+            // pageTitle.innerHTML = "Hello JavaScript";
+        </script>
+    </body>
+</html>

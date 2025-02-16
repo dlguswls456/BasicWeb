@@ -1,0 +1,11 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.inline {
+    background-color: beige;
+    width: 100px; /* 인라인 요소는 width, height 값을 줄 수 없음 */
+    height: 100px;
+}
